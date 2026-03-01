@@ -5,7 +5,7 @@ import { rows } from "./mockData";
 
 const Timesheet = () => {
   return (
-    <Box>
+    <Box sx={{ overflowX: "auto" }}>
       <Typography variant="h4" gutterBottom>
         Timesheet
       </Typography>
@@ -17,7 +17,10 @@ const Timesheet = () => {
           pageSizeOptions={[5]}
           disableRowSelectionOnClick
           rowHeight={48}
-          sx={{ border: "none" }}
+          sx={{ border: "none","& .MuiDataGrid-columnHeaders": {
+      fontSize: 12,
+    }, }}
+           autoHeight
         />
       </Card>
     </Box>

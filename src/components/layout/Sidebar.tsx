@@ -5,7 +5,7 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import PeopleIcon from "@mui/icons-material/People";
 import SettingsIcon from "@mui/icons-material/Settings";
 import { useNavigate, useLocation } from "react-router-dom";
-const Sidebar = () => {
+const Sidebar = ({ onNavigate }: { onNavigate?: () => void }) => {
   const navigate = useNavigate();
   const location = useLocation();
   return (

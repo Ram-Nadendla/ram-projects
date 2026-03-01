@@ -8,7 +8,7 @@ interface Props {
 
 const StatsCard = ({ title, value, subtitle }: Props) => {
   return (
-    <Card sx={{ bgcolor: "background.paper" }}>
+    <Card sx={{ bgcolor: "background.paper",height: "100%" }}>
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           {title}

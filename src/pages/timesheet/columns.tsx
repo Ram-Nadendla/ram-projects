@@ -1,4 +1,4 @@
-import { GridColDef } from "@mui/x-data-grid";
+import type { GridColDef } from "@mui/x-data-grid";
 import { Chip } from "@mui/material";
 
 export const columns: GridColDef[] = [

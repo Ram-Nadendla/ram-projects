@@ -9,13 +9,24 @@ import {
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import { useTheme } from "@mui/material/styles";
+import MenuIcon from "@mui/icons-material/Menu";
+interface HeaderProps {
+  onToggleTheme: () => void;
+  onMenuClick: () => void;
+  isMobile: boolean;
+}
 
-const Header = ({ onToggleTheme }: { onToggleTheme: () => void }) => {
+const Header = ({ onToggleTheme, onMenuClick, isMobile }: HeaderProps) => {
   const theme = useTheme();
 
   return (
     <AppBar position="static" color="transparent" elevation={0}>
       <Toolbar sx={{ justifyContent: "space-between" }}>
+        {isMobile && (
+          <IconButton onClick={onMenuClick}>
+            <MenuIcon />
+          </IconButton>
+        )}
         <Typography variant="h6">Workflow Pro</Typography>
 
         <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>

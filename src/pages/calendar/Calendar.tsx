@@ -1,6 +1,7 @@
 import { Card, CardContent, Typography } from "@mui/material";
 
-const EventCard = ({ title, time }: { title: string; time: string }) => {
+const EventCard = (props:any) => {
+  const { title, time } = props;
   return (
     <Card variant="outlined" sx={{ mb: 1 }}>
       <CardContent sx={{ p: 1.5 }}>

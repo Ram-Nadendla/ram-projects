@@ -1,6 +1,5 @@
-import { PaletteOptions } from "@mui/material";
 
-export const lightPalette: PaletteOptions = {
+export const lightPalette: any = {
   mode: "light",
   primary: { main: "#2563EB" },     // blue-600
   secondary: { main: "#64748B" },   // slate-500
@@ -10,7 +9,7 @@ export const lightPalette: PaletteOptions = {
   },
 };
 
-export const darkPalette: PaletteOptions = {
+export const darkPalette: any = {
   mode: "dark",
   primary: { main: "#3B82F6" },     // blue-500
   secondary: { main: "#94A3B8" },

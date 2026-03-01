@@ -1,4 +1,5 @@
-const typography = {
+
+const typography: any = {
   fontFamily: "Inter, Roboto, Arial, sans-serif",
   h4: { fontWeight: 600 },
   h6: { fontWeight: 600 },
